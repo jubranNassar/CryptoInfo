@@ -52,9 +52,10 @@ api.coincap.io/v2/assets/bitcoin
 
 ## Goals
 
-Day1: HTML, CSS basics laid down.  
-Day2: Finish up what's left from Day1 and Work on Axios calls, functions and more javascript.  
-Day3: Finish up what's left, go over the project and add finishing touches.  
+|Day1| HTML, CSS basics laid down.|
+|----|----------------------------|  
+|Day2| Finish up what's left from Day1 and Work on Axios calls, functions and more javascript|
+|Day3| Finish up what's left, go over the project and add finishing touches|
 
 ## Priority Matrix
 
