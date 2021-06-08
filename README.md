@@ -31,13 +31,13 @@ api.coincap.io/v2/assets/bitcoin
 ```
 ## Wireframe
 
-![Homepage](https://user-images.githubusercontent.com/84308658/121222920-f9483880-c854-11eb-9a5c-aefdc918ff84.png)
+![1-Homepage](https://user-images.githubusercontent.com/84308658/121243522-cbbab980-c86b-11eb-8707-761e304a6437.png)
 
-![2-Mobile](https://user-images.githubusercontent.com/84308658/121224899-fe0dec00-c856-11eb-9825-5beecfbf427b.png)
+![2-Mobile](https://user-images.githubusercontent.com/84308658/121243720-0cb2ce00-c86c-11eb-8767-55579f7119db.png)
 
-![Crypto](https://user-images.githubusercontent.com/84308658/121228079-51ce0480-c85a-11eb-8d76-3967ab215956.png)
+![3-Crypto](https://user-images.githubusercontent.com/84308658/121244127-85b22580-c86c-11eb-9ad3-d439b288e1d3.png)
 
-![crypto2](https://user-images.githubusercontent.com/84308658/121228564-e59fd080-c85a-11eb-8731-6de189a82b4f.png)
+![4-crypto2](https://user-images.githubusercontent.com/84308658/121244307-b4300080-c86c-11eb-8d97-5e7bae9c7923.png)
 
 ## MVP
 
@@ -51,9 +51,9 @@ api.coincap.io/v2/assets/bitcoin
 2. Additional styling.
 
 ## Goals
-
-|Day1| HTML, CSS basics laid down.|
+|Day | Goal
 |----|----------------------------|  
+|Day1| HTML, CSS basics laid down.|
 |Day2| Finish up what's left from Day1 and Work on Axios calls, functions and more javascript|
 |Day3| Finish up what's left, go over the project and add finishing touches|
 
@@ -63,14 +63,14 @@ api.coincap.io/v2/assets/bitcoin
 
 ## Timeframes
 
-|Component|Time|
-|---------|----|
-|HTML basic layout     | 3H |
-|Basic CSS layout | 2H |
-|More CSS styling | 3H |
-|Media query | 3H |
-|Functions | 3H |
-|Axios calls | 3H |
-|Research | 3H |
-|Testing & Debugging | 3H |
-|Review & additional Addons | 3H |
+|Component|Estimated Time| Actual Time |
+|---------|----|------|
+|HTML basic layout | 3H | |
+|Basic CSS layout | 2H | |
+|More CSS styling | 3H | |
+|Media query | 3H | |
+|Functions | 3H | |
+|Axios calls | 3H | |
+|Research | 3H | |
+|Testing & Debugging | 3H | |
+|Review & additional Addons | 3H | |
