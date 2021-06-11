@@ -1,0 +1,149 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+
+}
+
+
+body {
+  min-height: 100%;
+  text-align: center;
+  color: #2b08dd;
+  font-family: "Roboto Mono", sans-serif;
+
+}
+
+
+header {
+  background-image: linear-gradient(to right, #2b08dd, #0044e5, #0060e3, #0074d8, #1686c8);
+  height: 10vw;
+}
+
+
+#title {
+  padding: 50px;
+  color: whitesmoke;
+  font-size: 50px;
+}
+
+main {
+  padding-bottom: 10;
+
+}
+
+.inputcontainer {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  
+}
+.search {
+  margin: 50px;
+}
+
+
+#browse {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+
+#blank {
+   border-color: black;
+  width: 35vh;
+  height: 30px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.container { 
+  font-size: 15px;
+}
+
+#convertcrypto {
+  margin-bottom: -10px;
+}
+
+#cryptosecond {
+  font-size: 15px;
+}
+
+#amount {
+width: 70px;
+}
+
+#from-crypto {
+  width: 70px;
+}
+
+#to-fiat {
+  width: 70px;
+}
+
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: center;
+  text-align: center;
+  background-image: linear-gradient(to right, #2b08dd, #0044e5, #0060e3, #0074d8, #1686c8);
+  margin: 50px;
+  width: 100%;
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+#typeahead-container {
+  position: absolute;
+}
+
+#result-container {
+  position: absolute;
+  background: white;
+  width: 28.5vw;
+  top: 30px;
+  color: black;
+  border: solid gray 1px;
+  border-top:solid transparent;
+  overflow-y: scroll;
+  box-sizing: border-box;
+
+}
+
+#result-container p {
+  margin: 0;
+  padding: 4px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+
+
+#result-container::-webkit-scrollbar {
+  background: #AEAEAE;
+}
+
+#result-container::-webkit-scrollbar-thumb {
+  background: #5E5E5E;
+}
+
+#result-container p:hover {
+  border: 1px solid black;
+  cursor:pointer;
+}

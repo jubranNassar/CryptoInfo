@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="index.js" charset="UTF-8"></script>
+  <link rel="stylesheet" href="index.css" type="text/css" media="screen" title="no title" charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+  <title>Welcome To CryptoInfo</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Crypto Info</h1>
+  </header>
+  <main>
+    <div class="inputcontainer">
+    <div class="search">
+      <h1 id="browse">Browse Different crypto</h1>
+      <form id="typeahead-container">
+        
+        <input type="text" id="blank" placeholder="Search...">
+        <button id="searchbutton">Search</button>
+        <div id="result-container">
+        </div>
+        <div id="cryptocontainer">
+
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <h1 id="convertcrypto">Convert Crypto</h1>
+      <h2 id=cryptosecond>converts cryptocurrency to fiat currency</h2>
+      <input type="number" id="amount" placeholder="amount">
+      <input type="text" id="from-crypto" placeholder="From">
+      <input type="text" id="to-fiat" placeholder="To">
+      <button id="convert">Convert!</button>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <form id="contact">
+      <div class="contact">
+        <h2>contact us</h2>
+        <input type="text" id="contactname" placeholder="Full Name">
+        <input type="email" id="contact-email" placeholder="Email">
+        <button type="submit" id="submit">Submit</button> 
+        
+      </div>
+      &copy;CryptoInfo
+    </form>
+  </footer>
+</body>
+</html>
