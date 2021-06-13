@@ -5,14 +5,23 @@ const currencyOutput = document.querySelector("#to-fiat");
 const amount = document.querySelector("#amount");
 const convertButton = document.querySelector("#convert");
 const resultsContainer = document.querySelector('#result-container');
+const submit = document.querySelector("#submit");
+
 
 function removeCrypto() {
-  const removeCurrent = document.querySelector("cryptocontainer");
+  const removeCurrent = document.querySelector("#cryptocontainer");
   while (removeCurrent.lastChild) {
     removeCurrent.removeChild (removeCurrent.lastChild);
   }
 }
 
+// removes convert search
+function removeConverted() {
+  const removeContainer = document.querySelector("#convertcontainer");
+  while (removeContainer.lastChild) {
+    removeContainer.removeChild (removeContainer.lastChild);
+  }
+}
 //gets list of all crypto
 const allCrypto = async () => {
   const url = `https://api.coincap.io/v2/assets/`
@@ -72,18 +81,26 @@ const cryptoConvert = async () => {
   const base_url = `https://api.coingecko.com/api/v3/simple/price?ids=${crypto}&vs_currencies=${currency}`
   try {
     const result = await axios.get(base_url);
-    let convertResult = result.data.
+    let convertResult = result.data[crypto][currency];
     console.log(convertResult)
+
+    // display content on the page
+    removeConverted();
+    const convertContainer = document.querySelector("#convertcontainer");
+    const value = document.createElement("h1");
+    const newVal = amount.value * result.data[crypto][currency];
+    value.innerText = `${amount.value} ${crypto} = ${newVal} ${currency}`;
+    convertContainer.appendChild(value);
   } catch(error) {
     console.error(error);
   }
 }
 
-// displays the content on the page 
+// displays the content of a specific crypto on the page 
 const displayContent = (response) => {
+  removeCrypto();
   const cryptoContainer = document.querySelector("#cryptocontainer");
-  const body = document.querySelector("body");
-  cryptoContainer.classList.add("cryptocontainer");
+
   const title = document.createElement("h1");
   title.innerText = response.data.data.name;
   cryptoContainer.appendChild(title);
@@ -99,12 +116,7 @@ const displayContent = (response) => {
   const priceUsd = document.createElement("h4");
   priceUsd.innerText = response.data.data.priceUsd;
   cryptoContainer.appendChild(priceUsd);
-
-  
-  body.appendChild(cryptoContainer);
 }
-
-
 
 
 convertButton.addEventListener("click", (event) => {
@@ -120,5 +132,4 @@ searchButton.addEventListener("click", (event)=> {
   getData();
 })
 
-
-  
+submit.addEventListener("click", (event)=> event.preventDefault())

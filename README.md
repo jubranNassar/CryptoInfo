@@ -43,7 +43,7 @@ api.coincap.io/v2/assets/bitcoin
 
 1. Axios call on API
 2. Display response on page
-3. clear previous result for secondary search
+3. clear previous result for secondary search.
 4. Search for specific currency and display response.
 
 ## Post MVP
