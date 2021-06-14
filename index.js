@@ -37,10 +37,15 @@ const allCrypto = async () => {
   }
 }
 
+const removeResults = () => {
+  resultsContainer.innerHTML = "";
+  resultsContainer.classList.add("hidden");
+} 
+
 //filters dropdown list
 const filterAndAppendResults = (event, names) => {
   const { value } = event.target;
-  resultsContainer.innerHTML = "";
+  removeResults();
   if (!value) return;
   const filteredCrypto = names.filter((cryptoName) => {
     return cryptoName.toLowerCase().includes(value.toLowerCase());
@@ -50,17 +55,17 @@ const filterAndAppendResults = (event, names) => {
     const cryptoTag = document.createElement('p');
     cryptoTag.addEventListener("click", () => {
       id.value=cryptoName;
+      removeResults();
       resultsContainer.innerHTML = "";
       
     })
     cryptoTag.innerText = cryptoName;
     resultsContainer.append(cryptoTag);
   });
-
+  resultsContainer.classList.remove("hidden");
 }
 allCrypto();
-
-
+removeResults();
 //gets data about a specific crypto
 const getData = async () => {
   try {
@@ -114,7 +119,7 @@ const displayContent = (response) => {
   cryptoContainer.appendChild(rank);
 
   const priceUsd = document.createElement("h4");
-  priceUsd.innerText = response.data.data.priceUsd;
+  priceUsd.innerText = (response.data.data.priceUsd);
   cryptoContainer.appendChild(priceUsd);
 }
 

@@ -13,10 +13,7 @@ body {
   text-align: center;
   color: whitesmoke;
   font-family: "Roboto Mono", sans-serif;
-  padding-bottom: 300px;
-
 }
-
 
 header {
   background-image: url("https://i.imgur.com/TeQwKbC.png");
@@ -42,9 +39,7 @@ header {
   justify-content: space-evenly;
   align-items: baseline;
   display: flex;
-  flex-direction: row;
-
-  
+  flex-direction: row; 
 }
 
 
@@ -107,12 +102,15 @@ font-size: 20px;
   text-align: center;
   background-color: #252a32;
   width: 250px;
-
   color: white;
   border-radius: 4px;
   margin-bottom: 15px;
 }
 
+.hidden {
+display: none;
+
+}
 
 footer {
   position:fixed;
@@ -126,6 +124,7 @@ footer {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 1vw;
+  margin: 30px;
 }
 
 
@@ -133,13 +132,14 @@ footer {
   position: relative;
   background:white;
   color: black;
-  top: -4px;
+  top: -7px;
   max-height: 200px;
   border: black 1px;
   border-top:solid transparent;
   border-radius: 4px;
   overflow-y: scroll;
   box-sizing: border-box;
+  overflow: visible;
 
 }
 
@@ -215,7 +215,7 @@ footer {
 
   #result-container {
     position: relative;
-    width: 202px;
+    width: 210px;
     top: -2px;
   }
 
